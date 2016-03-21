@@ -96,7 +96,7 @@ function Particle(){
 		//console.log(this.velocity);
 	};
 	this.setPosition = function(){
-		this.updateTrail();
+		//this.updateTrail();
 		this.mesh.position.add(this.displacement);
 		this.forceArrow.position.copy(this.mesh.position);
 		this.displacementArrow.position.copy(this.mesh.position);
@@ -152,7 +152,7 @@ function Electron(x, y, z){
     this.setDefaultColor = function(){
         this.mesh.material.color.set(0x0000ff);
     };
-	this.makeTrail(0x0000ff);
+	//this.makeTrail(0x0000ff);
 
 
 }
@@ -168,7 +168,7 @@ function Proton(x, y, z){
         this.mesh.material.color.set(0x00ff00);
     };
 
-	this.makeTrail(0x00ff00);
+	//this.makeTrail(0x00ff00);
 
 }
 
