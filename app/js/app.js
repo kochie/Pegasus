@@ -262,7 +262,9 @@ function init() {
 
 	//creates a new viewpoint camera that will be what the screen displays to the user.
 	camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 1000 );
-	camera.position.z = 20;
+	camera.position.z = 100;
+	camera.position.y = 100;
+	camera.position.x = 100;
 
 	THREEx.WindowResize(renderer, camera);
 
